@@ -20,7 +20,7 @@ python3 controller.py 55555
 commands:
 
 CLIENT COMMAND:
-/nick <new nickname>
+/nick "new nickname"
 
 CONTROLLER COMMANDS:
 type help and watch them lol
