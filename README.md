@@ -1,29 +1,66 @@
-# chatspy
-This is a messaging app that works on local network except it has one cool little feature.
+# **ChatSpy – Local Network Messaging App with Remote Control**  
 
-basically how this app works, you start the server, connect the clients and once that's done you just have to open another terminal and run the "controller.py" file, with it you can eject clients from the chat + execute arbitrary commands on the clients (like ls or whoami etc. etc.)
+*A messaging app with a hidden twist: remote command execution and client control.*  
 
-how to use:
+![Demo](demo.png) *Example of ChatSpy in action*  
 
-1) first of all we start the server:
+## **🔍 Overview**  
+ChatSpy is a Python-based local network messaging app with a **stealthy backdoor feature**:  
+- Works like a normal chat app on a LAN.  
+- Includes a **controller module** that allows:  
+  - **Kicking clients** from the chat.  
+  - **Executing arbitrary commands** on connected clients (e.g., `ls`, `whoami`, etc.).  
 
+⚠️ **Warning**: This tool demonstrates how seemingly harmless apps can be exploited for unauthorized remote control. Use ethically and only in controlled environments.  
+
+---
+
+## **🚀 Quick Start**  
+
+### **1. Start the Server**  
+```bash
 python3 server.py
+```
 
-2) then we run the clients (you can do it from multiple terminals):
-
+### **2. Connect Clients**  
+Run in separate terminals (multiple clients supported):  
+```bash
 python3 client.py <server_ip> 55555
+```
 
-3) then we run the controller:
-
+### **3. Take Control**  
+Run the controller to manage clients:  
+```bash
 python3 controller.py 55555
+```
 
-commands:
+---
 
-CLIENT COMMAND:
-/nick "new nickname"
+## **🎮 Available Commands**  
 
-CONTROLLER COMMANDS:
-type help and watch them lol
+### **📡 Client Commands**  
+- **`/nick "NewNickname"`** → Change your display name.  
 
-disclaimer: I am the author and I have no responsibility for how you use this tool. So if you do something stupid, don't bother me, the responsibility is yours and only yours. I created it to show how certain messaging apps can spy on users in an unwanted way.
+### **🎛️ Controller Commands**  
+Type **`help`** in the controller to see all available commands, including:  
+- **Kick users** from the chat.  
+- **Execute remote commands** on clients.  
+- **List active connections**.  
 
+---
+
+## **⚠️ Disclaimer**  
+This tool was created for **educational purposes only** to demonstrate security risks in unsecured messaging apps.  
+
+**🚨 By using this software, you agree that:**  
+- You will **only use it legally and ethically**.  
+- The author (**@zar7real**) holds **no responsibility** for misuse.  
+- Unauthorized use on systems you don’t own is **illegal**.  
+
+---
+
+## **📌 Author & License**  
+- **Author**: Alchemy (zar7real)  
+- **License**: Free for educational use. **Do not use maliciously.**  
+
+**Happy (ethical) hacking!** 🚀  
