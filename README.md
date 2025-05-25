@@ -2,8 +2,6 @@
 
 *A messaging app with a hidden twist: remote command execution and client control.*  
 
-![Demo](demo.png) *Example of ChatSpy in action*  
-
 ## **🔍 Overview**  
 ChatSpy is a Python-based local network messaging app with a **stealthy backdoor feature**:  
 - Works like a normal chat app on a LAN.  
